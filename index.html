@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>竹韵 · 竹笛学习计划</title>
+  <meta name="description" content="为《保姆式竹笛零基础到专业大成系统课程》整理的 14 周学习计划，含 80 课简介、每日打卡、练习笔记与文档导出。">
+  <meta name="theme-color" content="#F5F0E4">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23B4472F'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23FBF6EA' font-family='serif'%3E%E7%AB%B9%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a class="brand" href="#/today" aria-label="竹韵学习计划首页">
+        <span class="brand-seal">竹</span>
+        <span class="brand-text"><strong>竹韵</strong><small>竹笛学习计划</small></span>
+      </a>
+
+      <nav class="nav" aria-label="主导航">
+        <a class="nav-item" href="#/today" data-nav="today">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><path d="M12 8v4.2l2.6 1.6"/></svg>
+          <span>今日</span>
+        </a>
+        <a class="nav-item" href="#/course" data-nav="course">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6.5h16M4 12h16M4 17.5h11"/></svg>
+          <span>课程</span>
+        </a>
+        <a class="nav-item" href="#/plan" data-nav="plan">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 9.5h17M8 3.5v3M16 3.5v3"/></svg>
+          <span>计划</span>
+        </a>
+        <a class="nav-item" href="#/archive" data-nav="archive">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4.5h11.5A2.5 2.5 0 0 1 19 7v12.5H7.5A2.5 2.5 0 0 1 5 17V4.5Z"/><path d="M5 17a2.5 2.5 0 0 1 2.5-2.5H19M8.5 8h7"/></svg>
+          <span>档案</span>
+        </a>
+      </nav>
+
+      <div class="side-progress">
+        <div class="ring" id="sideRing" style="--p:0"><span id="sideRingText">0%</span></div>
+        <div class="side-progress-text"><strong id="sideDone">0 / 80</strong><span>已完成课程</span></div>
+      </div>
+
+      <p class="side-note">每天一节课，留 30 分钟练习。周日复盘，不赶进度。</p>
+      <svg class="side-bamboo" viewBox="0 0 160 420" fill="none" aria-hidden="true">
+        <g opacity=".2" stroke="#2F6B4E" stroke-linecap="round">
+          <path d="M108 430V54" stroke-width="14"/>
+          <path d="M108 96h-20M108 188h24M108 280h-18M108 372h22" stroke-width="4"/>
+          <path d="M132 430V130" stroke-width="7"/>
+          <path d="M132 210h14M132 300h-12" stroke-width="3"/>
+          <path d="M84 120c-16-18-30-24-44-26 8 18 22 28 44 26Z" fill="#2F6B4E" stroke="none"/>
+          <path d="M132 250c14-14 26-18 38-20-6 15-18 23-38 20Z" fill="#2F6B4E" stroke="none"/>
+        </g>
+      </svg>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="topbar-title">
+          <p class="kicker" id="pageKicker">学习计划</p>
+          <h1 id="pageTitle">今日</h1>
+        </div>
+        <div class="topbar-actions">
+          <span class="save-status" id="saveStatus">本地自动保存</span>
+          <a class="btn ghost small" href="#/archive">导出文档</a>
+        </div>
+      </header>
+
+      <div id="view" class="view"></div>
+
+      <footer class="footer">
+        <p>课程目录来自 B 站合集 BV1uUpz6pELZ · 80 个可播放分 P</p>
+        <p>简介与练习建议为本站整理，具体以视频讲解为准。学习记录保存在本机浏览器。</p>
+      </footer>
+    </main>
+
+    <nav class="mobile-nav" aria-label="移动端导航">
+      <a href="#/today" data-nav="today" class="mobile-nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8"/><path d="M12 8v4.2l2.6 1.6"/></svg>
+        <span>今日</span>
+      </a>
+      <a href="#/course" data-nav="course" class="mobile-nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 6.5h16M4 12h16M4 17.5h11"/></svg>
+        <span>课程</span>
+      </a>
+      <a href="#/plan" data-nav="plan" class="mobile-nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 9.5h17M8 3.5v3M16 3.5v3"/></svg>
+        <span>计划</span>
+      </a>
+      <a href="#/archive" data-nav="archive" class="mobile-nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 4.5h11.5A2.5 2.5 0 0 1 19 7v12.5H7.5A2.5 2.5 0 0 1 5 17V4.5Z"/><path d="M5 17a2.5 2.5 0 0 1 2.5-2.5H19M8.5 8h7"/></svg>
+        <span>档案</span>
+      </a>
+    </nav>
+  </div>
+
+  <div id="modalRoot"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="printRoot" aria-hidden="true"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
