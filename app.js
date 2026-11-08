@@ -590,8 +590,8 @@
 
     return '<section class="page-head"><h2>课程目录</h2><p class="lede">80 个分 P，按入门基础、进阶技法、乐理与欣赏、流行曲、独奏曲排列。点开任意一课，可以看简介、做标记、写笔记。</p></section>' +
       '<div class="toolbar">' +
-        '<div class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>' +
-        '<input id="courseSearch" type="search" placeholder="搜索课程，例如：长音、吐音、姑苏行" value="' + esc(courseQuery) + '" autocomplete="off"></div>' +
+        '<div class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>' +
+        '<input id="courseSearch" type="search" aria-label="搜索课程" placeholder="搜索课程，例如：长音、吐音、姑苏行" value="' + esc(courseQuery) + '" autocomplete="off"></div>' +
         '<div class="filters">' + pills + '</div>' +
       '</div>' +
       '<div class="course-tools"><span class="result-count" id="resultCount">' + filteredLessons().length + ' / ' + LESSONS.length + ' 课</span>' +
@@ -1214,6 +1214,7 @@
     document.addEventListener('change', onChange);
     document.addEventListener('keydown', onKeydown);
     window.addEventListener('hashchange', function () {
+      if (location.hash === '#main') return;  // 「跳到主要内容」锚点不触发视图重渲染
       if (openModal) {
         $('#modalRoot').innerHTML = '';
         document.body.classList.remove('modal-open');
