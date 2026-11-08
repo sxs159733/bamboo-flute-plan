@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
   <div class="app">
     <aside class="sidebar">
       <a class="brand" href="#/today" aria-label="竹韵学习计划首页">
@@ -31,19 +32,19 @@
 
       <nav class="nav" aria-label="主导航">
         <a class="nav-item" href="#/today" data-nav="today">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><path d="M12 8v4.2l2.6 1.6"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4.2l2.6 1.6"/></svg>
           <span>今日</span>
         </a>
         <a class="nav-item" href="#/course" data-nav="course">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6.5h16M4 12h16M4 17.5h11"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 6.5h16M4 12h16M4 17.5h11"/></svg>
           <span>课程</span>
         </a>
         <a class="nav-item" href="#/plan" data-nav="plan">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 9.5h17M8 3.5v3M16 3.5v3"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 9.5h17M8 3.5v3M16 3.5v3"/></svg>
           <span>计划</span>
         </a>
         <a class="nav-item" href="#/archive" data-nav="archive">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4.5h11.5A2.5 2.5 0 0 1 19 7v12.5H7.5A2.5 2.5 0 0 1 5 17V4.5Z"/><path d="M5 17a2.5 2.5 0 0 1 2.5-2.5H19M8.5 8h7"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 4.5h11.5A2.5 2.5 0 0 1 19 7v12.5H7.5A2.5 2.5 0 0 1 5 17V4.5Z"/><path d="M5 17a2.5 2.5 0 0 1 2.5-2.5H19M8.5 8h7"/></svg>
           <span>档案</span>
         </a>
       </nav>
@@ -66,7 +67,7 @@
       </svg>
     </aside>
 
-    <main class="main">
+    <main class="main" id="main" tabindex="-1">
       <header class="topbar">
         <div class="topbar-title">
           <p class="kicker" id="pageKicker">学习计划</p>
@@ -90,19 +91,19 @@
 
     <nav class="mobile-nav" aria-label="移动端导航">
       <a href="#/today" data-nav="today" class="mobile-nav-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8"/><path d="M12 8v4.2l2.6 1.6"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4.2l2.6 1.6"/></svg>
         <span>今日</span>
       </a>
       <a href="#/course" data-nav="course" class="mobile-nav-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 6.5h16M4 12h16M4 17.5h11"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 6.5h16M4 12h16M4 17.5h11"/></svg>
         <span>课程</span>
       </a>
       <a href="#/plan" data-nav="plan" class="mobile-nav-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 9.5h17M8 3.5v3M16 3.5v3"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 9.5h17M8 3.5v3M16 3.5v3"/></svg>
         <span>计划</span>
       </a>
       <a href="#/archive" data-nav="archive" class="mobile-nav-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 4.5h11.5A2.5 2.5 0 0 1 19 7v12.5H7.5A2.5 2.5 0 0 1 5 17V4.5Z"/><path d="M5 17a2.5 2.5 0 0 1 2.5-2.5H19M8.5 8h7"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 4.5h11.5A2.5 2.5 0 0 1 19 7v12.5H7.5A2.5 2.5 0 0 1 5 17V4.5Z"/><path d="M5 17a2.5 2.5 0 0 1 2.5-2.5H19M8.5 8h7"/></svg>
         <span>档案</span>
       </a>
     </nav>
